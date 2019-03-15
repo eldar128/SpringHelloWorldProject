@@ -1,4 +1,4 @@
-# SpringHelloWorldProject
+﻿# SpringHelloWorldProject
 
 Hello World проект
 
@@ -15,7 +15,7 @@ Hello World проект
 
 ## Запуск
 
-* 2.1 Заходим в папку *SpringHelloWorldProject*
+* 2.1 Заходим в папку *SpringHelloWorldProject-master*
 
 * 2.2 Запускаем команду `mvn spring-boot:run`
 
