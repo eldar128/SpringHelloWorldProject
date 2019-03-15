@@ -10,4 +10,4 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 # IntellijIdea
-.idea/'.idea' 
+.idea/
