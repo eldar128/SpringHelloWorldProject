@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-asdasdasd
-</body>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Title</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <h2></h2>
+
+        <script>
+            $( document ).ready(function() {
+                ajaxGet();
+
+                function ajaxGet(){
+                    $.ajax({
+                        type : "GET",
+                        url : window.location + "re/show",
+                        success: function(result){
+                            if(result.status == "Done"){
+                                $('h2').text(result.data);
+                                console.log("Success: ", result);
+                            }else{
+                                console.log("Fail: ", result);
+                            }
+                        },
+                        error : function(e) {
+                            console.log("ERROR: ", e);
+                        }
+                    });
+                }
+            })
+        </script>
+
+    </body>
 </html>
