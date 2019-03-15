@@ -9,7 +9,5 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-# IntellijIdea files
-*.iml
-.idea
-out
+# IntellijIdea
+.idea/
